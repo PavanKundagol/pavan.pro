@@ -1,26 +1,6 @@
-# minima-reboot
+# Personal website for Pavan Kundagol
 
-[![Gem Version](https://badge.fury.io/rb/minima-reboot.svg)](https://badge.fury.io/rb/minima-reboot)
-
-Minima Reboot is a responsive [Bootstrap](https://getbootstrap.com/) port of Jekyll's default theme, [Minima](https://github.com/jekyll/minima). It tries to be style-light, following Bootstrap as much as possible. It uses `bootstrap.css` only, and does not load `bootstrap.js`.
-
-
-[Theme preview](https://aterenin.github.io/minima-reboot/)
-
-![minima theme preview](https://raw.githubusercontent.com/aterenin/minima-reboot/master/screenshot.png)
-
-## Installation
-
-Add this line to your site's `_config.yml`
-
-```yaml
-remote_theme: aterenin/minima-reboot
-```
-
-Jekyll will automatically download and enable the theme, provided it is up to date.
-
-Alternatively, Minima Reboot is a [gem-based theme](https://jekyllrb.com/docs/themes/) and can be installed from [rubygems.org](https://rubygems.org/gems/minima-reboot).
-
+Used GitHub Pages with Jekyll and Minima Reboot theme.
 
 ## Files
 
