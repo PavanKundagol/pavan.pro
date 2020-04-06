@@ -5,6 +5,7 @@ $layout-responsive-nav-cutoff: 768px !default;
 
 body {
   background-color: $layout-color-background;
+  font-weight: bolder;
 }
 
 #nav-header {
@@ -40,8 +41,8 @@ body {
 
 #content {
   h1, h2, h3, h4 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
     text-align: left;
   }
   blockquote {
