@@ -9,7 +9,7 @@
 
     <div ng-controller="LinksController">
       <ul>
-        <li ng-repeat="link in links">
+        <li ng-repeat="link in links track by $index">
           {{link}}
         </li>
       </ul>
