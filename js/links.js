@@ -1,4 +1,4 @@
-var pavanpro = angular.module('pavanpro', []);
+var pavanpro = angular.module('pavanpro', ['ngSanitize']);
 
 pavanpro.controller('LinksController', function LinksController($scope) {
   $scope.links = [

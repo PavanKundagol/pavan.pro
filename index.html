@@ -1,20 +1,51 @@
 <!doctype html>
-<html ng-app="pavanpro">
+<html lang="en" ng-app="pavanpro">
   <head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Pavan.Pro</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-sanitize.min.js"></script>
     <script src="js/links.js"></script>
+
   </head>
   <body>
 
-    <div ng-controller="LinksController">
-      <ul>
-        <li ng-repeat="link in links track by $index">
-          {{link}}
-        </li>
-      </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div ng-controller="LinksController ">
+
+
+            <div class="panel panel-default">
+              <div class="panel-heading"><b>Links</b></div>
+              <div class="panel-body">
+                <div class="input-group input-group-lg">
+                  <input ng-model="search" type="text" class="form-control" 
+                    placeholder="Filter List" aria-describedby="searchall">
+                  <span class="input-group-addon" id="searchall">Quick Filter</span>
+                </div>
+              </div>
+            </div>
+
+            <ul class="list-group">
+              <li class="list-group-item" ng-repeat="link in links | filter:search track by $index">
+                <div ng-bind-html="link | linky"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>
